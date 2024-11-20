@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-trophy {
+  width: 100px; /* ou qualquer tamanho desejado */
+  height: auto; /* mantém a proporção da imagem */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +14,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
@@ -36,3 +35,29 @@
     transform: rotate(360deg);
   }
 }
+
+.picker-item-selected {
+  font-weight: bold;
+  opacity: 1;
+  filter: none;
+}
+
+.picker-item-unselected {
+  opacity: 0.3;
+  filter: blur(0.1px);
+}
+/* 
+.picker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+/* 
+.picker-item {
+  height: 10px;
+  line-height: 40px;
+  text-align: center;
+  transition: opacity 0.3s;
+} */
